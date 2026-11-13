@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Basket & Bite | Mangaluru food + grocery delivery</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<header class="top"><div class="w"><button class="lg" data-go="home">Basket & Bite</button>
+<nav class="nl" aria-label="Main"><button data-j="browse">Browse</button><button data-j="how">How it works</button><button data-j="vendors">For vendors</button></nav>
+<div class="na"><button class="pill" data-go="cart" id="cbtn">Cart (<span id="cc">0</span>)</button><button class="pill" id="lbtn">Log in</button><button class="dark" data-go="food">Order now</button></div></div></header>
+
+<main id="v-home"><div class="w">
+<div class="hero"><div><span class="tag">MANGALURU · FOOD + GROCERY</span>
+<h1>Food and groceries from Mangaluru, <em>at your door in 25 minutes.</em></h1>
+<p class="lead">Order from local restaurants and grocery stores in one cart. One checkout, one delivery agent, and free delivery above ₹199.</p>
+<div class="cta"><button class="dark" data-go="food">Browse restaurants</button><button class="pill" data-go="groc">Shop groceries</button></div>
+<div class="facts" id="facts"></div></div>
+<div class="tk"><span class="fl f1">🔥 From Gajalee</span><h3><small>#BB-20481</small>Your order</h3>
+<div class="row"><span>Fish Ghee Roast × 1</span><b>₹280</b></div><div class="row"><span>Neer Dosa × 2</span><b>₹70</b></div><div class="row"><span>Tomato 1kg × 1</span><b>₹28</b></div>
+<div class="steps"><span class="on">Placed</span><span>Preparing</span><span>Out</span><span>Delivered</span></div>
+<div class="eta"><span>Estimated arrival</span><b>22 min</b></div><span class="fl f2">🛵 Agent assigned</span></div></div></div>
+
+<section id="browse"><div class="w"><div class="sh"><div class="eb">Browse</div><h2>What do you need today?</h2><p>Pick food or groceries. Order both together and one delivery agent brings everything.</p></div>
+<div class="tg" id="tg"></div><div class="cg" id="cg"></div></div></section>
+
+<section id="how"><div class="w"><div class="sh"><div class="eb">How it works</div><h2>Three steps from craving to doorstep.</h2></div>
+<div class="hw"><div class="cc"><div class="n">01</div><h3>Browse and add to cart</h3><p>Mix dishes from any restaurant with groceries from the store. Everything lands in one cart.</p></div>
+<div class="cc"><div class="n">02</div><h3>Check out once</h3><p>Log in, add your address and pay by UPI, card or cash on delivery. Delivery is free above ₹199.</p></div>
+<div class="cc"><div class="n">03</div><h3>Track it to your door</h3><p>Watch your order move from placed to preparing to out for delivery, with a live ETA.</p></div></div></div></section>
+
+<section id="vendors"><div class="w"><div class="vd"><div><h2>Bring your restaurant or store online in a day.</h2><p>List your menu or catalogue, manage incoming orders from one dashboard, and reach customers who are already ordering nearby.</p><div class="cta"><button class="or" id="vbtn">Register as a vendor</button><button class="pill" id="vlg" style="background:transparent;color:#fff;border-color:#ffffff66">Vendor login</button></div></div>
+<div class="vs"><div><span>Onboarding time</span><b>&lt; 24 hrs</b></div><div><span>Commission per order</span><b>8%</b></div><div><span>Payout cycle</span><b>Weekly</b></div><div><span>Kitchens live today</span><b id="vk"></b></div></div></div></div></section>
+
+<section><div class="w"><div class="sh"><div class="eb">Good to know</div><h2>Quick answers.</h2></div><div style="max-width:800px">
+<details><summary>Where do you deliver?</summary><p>Across Mangaluru: Hampankatta, Kadri, Bejai, Kodialbail, Bendoorwell, Lalbagh, Kankanady, Balmatta, Surathkal and Derebail.</p></details>
+<details><summary>How fast is delivery?</summary><p>Most orders arrive in 20 to 25 minutes. You see the estimate in your cart before you place the order.</p></details>
+<details><summary>What does delivery cost?</summary><p>₹30 per order, and free once your cart crosses ₹199.</p></details>
+<details><summary>Are there any coupons?</summary><p>Yes. Try WELCOME50, MANGALURU20 or BITE10 in your cart.</p></details>
+<details><summary>Can I order food and groceries together?</summary><p>Yes. Add from any restaurant and any grocery aisle, then check out once with a single delivery agent.</p></details>
+<details><summary>How do I pay?</summary><p>UPI, card or cash on delivery. This is a demo project, so no real payment is taken.</p></details></div></div></section></main>
+
+<main id="v-food" hidden><div class="w"><div class="ph"><div class="eb">Food</div><h1>Restaurants across Mangaluru.</h1><p id="fc"></p></div>
+<div class="ctl"><div class="seg" id="fm"></div><button class="pill" id="fv">🌿 Veg only</button>
+<select class="in" id="fs" aria-label="Sort"><option value="r">Top rated</option><option value="t">Fastest delivery</option><option value="p">Price: low to high</option></select>
+<input class="in" id="fq" placeholder="Search restaurants or dishes" aria-label="Search restaurants"></div><div class="rg" id="rg"></div></div></main>
+
+<main id="v-rest" hidden><div class="w" style="padding-top:48px;padding-bottom:96px"><button class="pill" data-go="food">← All restaurants</button><div class="rh" id="rh"></div><div id="rm" style="max-width:820px"></div></div></main>
+
+<main id="v-groc" hidden><div class="w"><div class="ph"><div class="eb">Groceries</div><h1>Fresh from Mangaluru's markets.</h1><p>Catch of the morning, local vegetables, Nandini dairy and everyday staples, delivered in about 30 minutes.</p></div>
+<div class="ctl"><input class="in" id="gq" placeholder="Search groceries" aria-label="Search groceries" style="flex:1;max-width:420px"></div>
+<div class="gl"><nav class="sb" id="sb" aria-label="Aisles"></nav><div id="gp"></div></div></div></main>
+
+<main id="v-cart" hidden></main><main id="v-track" hidden></main><main id="v-dash" hidden></main>
+<footer><div class="w"><div><div class="lg" style="margin-bottom:12px">Basket & Bite</div><p>Food and groceries from Mangaluru, delivered in 25 minutes.</p></div><p>SSD mini project · Demo only, no real payments or deliveries.</p></div></footer>
+
+<div id="gb" hidden></div>
+<div id="ov"><div id="mb"></div></div><div id="toast"></div>
+
+<script src="script.js"></script></body></html>
